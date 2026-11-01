@@ -170,12 +170,12 @@ export default function page() {
           <ul className="space-y-4">
             {employees.map((employee) => (
               <li key={employee.id} className="border-b pb-2">
-                <Link href={`/employees/${employee.id}`}>
+                <a href={`/employees/${employee.id}`}>
                   <h4 className="font-semibold">Name: {employee.name}</h4>
                   <p className="text-gray-600">Position: {employee.role}</p>
                   <p className="text-gray-600">Salary: ${employee.salary}</p>
                   <p className="text-gray-600">Birth Year: {employee.dob}</p>
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
